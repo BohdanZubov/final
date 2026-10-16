@@ -7,7 +7,7 @@ import WeatherSection from "./components/weather/WeatherSection";
 import { saveCities } from "./utils/saveCities";
 import NewsSection from "./components/news/NewsSection";
 import { getNews } from "./services/newsService";
-import { Footer } from "./components/footer/footer";
+import { Footer } from "./components/footer/Footer";
 import GallerySection from "./components/gallery/GallerySection";
 import { getGallery } from "./services/galleryService";
 
