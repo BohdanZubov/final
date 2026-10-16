@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-alternates:
+    "Montserrat Alternates", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+
+  --breakpoint-site-xl: 75rem;
+  --breakpoint-site-md: 48rem; 
+  
+  /* Brand & surface colors */
+  --color-brand: #ffb36c;
+  --color-brand-hover: #ffa14e;
+  --color-card: #e8e8e8;
+  --color-box: #d9d9d9;
+  --color-input: #e4e4e4;
+  --color-panel: #e8e8e8;
+
+  /* Text colors */
+  --color-placeholder: #878787;
+  --color-placeholder-soft: #ababab;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .btn-pill {
+    @apply inline-flex items-center justify-center rounded-[10px] bg-brand
+      font-medium text-black transition-colors hover:bg-brand-hover
+      disabled:cursor-not-allowed disabled:opacity-60;
+  }
+}
